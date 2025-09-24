@@ -1,0 +1,40 @@
+# Fichiers de build
+/bin/
+/out/
+/target/
+build/
+
+# Fichiers compilés
+*.class
+
+# Executables / Jar
+*.jar
+*.war
+*.ear
+*.exe
+
+# IDEs
+/.idea/
+/*.iml
+/.vscode/
+/*.classpath
+/*.project
+/.settings/
+
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# Logs
+*.log
+
+
+# JavaFX / ressources temporaires
+*.fxml~
+*.css~
+*.tmp
+*.swp
+

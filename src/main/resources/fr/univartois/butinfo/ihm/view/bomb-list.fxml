@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univartois.butinfo.ihm.controller.BombController" >
+
+    <!-- Fond arcade-style identique à la scène principale -->
+    <ImageView fx:id="myImageView" fitHeight="800" fitWidth="1400" preserveRatio="false" pickOnBounds="false" />
+
+    <BorderPane prefHeight="640.0" prefWidth="716.0" maxWidth="716.0" maxHeight="640.0">
+        <left>
+            <ListView fx:id="listView" prefWidth="200.0" BorderPane.alignment="CENTER" />
+        </left>
+
+        <center>
+            <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+                <children>
+                    <ImageView fx:id="imageBomb" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                    <Label fx:id="nomBomb" text="Nom" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+                    <Label fx:id="descriptionBomb" text="Description" wrapText="true" maxWidth="250" />
+                </children>
+            </VBox>
+        </center>
+
+        <bottom>
+            <HBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER" prefHeight="100.0">
+                <children>
+   					<Button text="Valider" onAction="#onValider"
+            		style="-fx-background-color: linear-gradient(#4CAF50, #2E7D32);
+                   -fx-text-fill: white;
+                   -fx-font-weight: bold;
+                   -fx-background-radius: 10;
+                   -fx-padding: 8 16;
+                   -fx-font-size: 14px;
+                   -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);" />
+
+    				<Button text="Annuler" onAction="#onAnnuler"
+            		style="-fx-background-color: linear-gradient(#E53935, #B71C1C);
+                   -fx-text-fill: white;
+                   -fx-font-weight: bold;
+                   -fx-background-radius: 10;
+                   -fx-padding: 8 16;
+                   -fx-font-size: 14px;
+                   -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);" />
+				</children>
+            </HBox>
+        </bottom>
+    </BorderPane>
+</StackPane>
+
